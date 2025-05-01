@@ -57,7 +57,7 @@ export default function CreateAccountForm() {
           </div>
 
           <button
-            type="submit"
+            type="button"
             onClick={() => navigate("/account")}
             className="mt-6 w-full bg-[#6C25FF] text-white py-2 rounded-lg text-center font-medium"
           >
