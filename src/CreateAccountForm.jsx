@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CreateAccountForm() {
   const [isAgency, setIsAgency] = useState("yes");
-
+ const navigate = useNavigate()
   return (
     <div className="min-h-screen bg-[#f7f9f8] px-4 pt-6">
       <h2 className="text-2xl font-semibold mb-6">Create your PopX account</h2>
@@ -52,6 +53,7 @@ export default function CreateAccountForm() {
 
         <button
           type="submit"
+          onClick={()=>navigate("/account")}
           className="mt-6 w-full bg-[#6C25FF] text-white py-2 rounded-lg text-center font-medium"
         >
           Create Account

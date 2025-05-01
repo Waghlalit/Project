@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 export default function Welcome() {
+  const navigate = useNavigate()
   return (
     <div className="min-h-screen flex items-end justify-center bg-gray-50 px-4 pb-10">
       <div className="w-full max-w-sm text-center">
@@ -10,10 +11,10 @@ export default function Welcome() {
         <p className="text-gray-500 mb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
-        <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-medium text-lg hover:bg-purple-700 transition mb-3">
+        <button onClick={() => navigate("/signup") } className="w-full bg-purple-600 text-white py-3 rounded-lg font-medium text-lg hover:bg-purple-700 transition mb-3">
           Create Account
         </button>
-        <button className="w-full bg-purple-100 text-purple-900 py-3 rounded-lg font-medium text-lg hover:bg-purple-200 transition">
+        <button onClick={() => navigate("/login")} className="w-full bg-purple-100 text-purple-900 py-3 rounded-lg font-medium text-lg hover:bg-purple-200 transition">
           Already Registered? Login
         </button>
       </div>
