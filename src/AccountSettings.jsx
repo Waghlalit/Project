@@ -1,7 +1,7 @@
 import React from "react";
 export default function AccountSettings() {
   return (
-    <div className="min-h-screen bg-[#f7f9f8] px-4 pt-6">
+    <div className="min-h-screen bg-[#f7f9f8] px-4 pt-6" style={{ maxWidth: "375px", margin: "0 auto", border: "1px solid #ccc" }}>
       <h2 className="text-xl font-medium mb-4">Account Settings</h2>
 
       <div className="bg-white rounded-lg shadow-sm p-4 flex flex-col gap-4">

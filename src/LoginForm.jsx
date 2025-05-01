@@ -2,7 +2,7 @@ import React from "react";
 
 export default function LoginForm() {
   return (
-    <div className="min-h-screen bg-[#f7f9f8] px-4 pt-10">
+    <div className="min-h-screen bg-[#f7f9f8] px-4 pt-10" style={{ maxWidth: "375px", margin: "0 auto", border: "1px solid #ccc" }}>
       <h2 className="text-2xl font-semibold mb-1">Signin to your PopX account</h2>
       <p className="text-gray-500 text-sm mb-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
